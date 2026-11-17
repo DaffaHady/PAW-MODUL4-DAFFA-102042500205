@@ -26,6 +26,10 @@ class User extends Authenticatable
     ];
 
     // TODO 1: Tambahkan method relasi peminjaman() (One-to-Many ke model Peminjaman)
+    public function peminjaman()
+    {
+    return $this->hasMany(Peminjaman::class);
+    }
 
 
     /**
